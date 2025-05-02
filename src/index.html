@@ -1,0 +1,680 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danseuse Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <!-- AOS animation  -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- font icon  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Lien vers Swiper JS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+   
+  
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-transparent backdrop-blur-md shadow-lg transition-all duration-500">
+      <div class="max-w-screen-xl mx-auto px-6 sm:px-6 lg:px-8 py-6 flex items-center justify-between">
+        
+        <!-- Logo -->
+        <div class="text-2xl sm:text-3xl font-[Playfair Display] text-[#FCD34D]">
+          <a href="#" class="focus:outline-none focus:ring-2 focus:ring-[#FCD34D]">Christie Valérie</a>
+        </div>
+  
+        <!-- Menu desktop -->
+        <div class="hidden md:flex items-center space-x-6 lg:space-x-10">
+          <a href="#home" class="text-white hover:text-[#FCD34D] transition-colors duration-300">Accueil</a>
+          <a href="#about" class="text-white hover:text-[#FCD34D] transition-colors duration-300">À propos</a>
+          <a href="#portfolio" class="text-white hover:text-[#FCD34D] transition-colors duration-300">Portfolio</a>
+          <a href="#blog" class="text-white hover:text-[#FCD34D] transition-colors duration-300">Blog</a>
+          <a href="#contact" class="border border-[#FCD34D] text-white hover:bg-[#FCD34D] hover:text-[#1e1b1e] px-6 py-2 rounded-full text-base font-semibold transition-colors duration-300">
+            Contactez-moi
+          </a>
+        </div>
+  
+        <!-- Bouton burger mobile -->
+        <div class="md:hidden">
+          <button id="mobileMenuButton" aria-label="Ouvrir le menu mobile" class="text-white text-2xl focus:outline-none focus:ring-2 focus:ring-[#FCD34D]">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+  
+      <!-- Menu mobile -->
+    <div id="mobileMenu" class="hidden flex-col items-center text-center space-y-6 bg-[#2A2A2A]/80 backdrop-blur-md text-white text-lg md:hidden py-8 px-4 mx-4 mt-4 rounded-xl shadow-xl transition-all duration-500 z-50">
+        <div>
+            <a href="#home" class="hover:text-[#FCD34D] transition-colors duration-300">Accueil</a>
+        </div>
+        <div>
+            <a href="#about" class="hover:text-[#FCD34D] transition-colors duration-300">À propos</a>
+        </div>
+        <div>
+            <a href="#portfolio" class="hover:text-[#FCD34D] transition-colors duration-300">Portfolio</a>
+        </div>
+        <div>
+            <a href="#blog" class="hover:text-[#FCD34D] transition-colors duration-300">Blog</a>
+        </div>
+        <div>
+            <a href="#contact" class="border-2 border-[#FCD34D] hover:bg-[#FCD34D] hover:text-[#1e1b1e] text-white px-6 py-2 rounded-full font-semibold transition-all duration-300">
+                Contact
+            </a>
+        </div>
+    </div>
+  
+    </nav>
+  
+<!-- Hero section  -->
+<section id="hero" class="relative bg-cover bg-center h-screen" style="background-image: url('./assets/images/bgImage.jpg');">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/80"></div>
+  
+    <!-- Contenu -->
+    <div class="relative container mx-auto px-6 md:px-12 h-full flex flex-col justify-center text-center text-white">
+      
+      <!-- Sous-titre -->
+      <span data-aos="fade-up" data-aos-delay="100" class="text-2xl mb-2">
+        Je suis Danseuse et Chorégraphe
+      </span>
+  
+      <!-- Titre principal -->
+      <h1 data-aos="fade-up" data-aos-delay="300" class="text-5xl md:text-7xl font-[Playfair Display] text-[#fcd34d] leading-tight mb-4">
+        Christie Valérie Akamba
+      </h1>
+  
+      <!-- Phrase d'accroche -->
+      <p data-aos="fade-up" data-aos-delay="500" class="text-lg md:text-2xl font-[Poppins] mb-6">
+        Explorez mon univers de la danse de création, chacune de mes œuvres raconte une histoire unique.
+      </p>
+  
+      <!-- Bouton -->
+      <div data-aos="fade-up" data-aos-delay="700" class="mt-12 flex justify-center">
+        <a href="#about" class="bg-[#fcd34d] hover:bg-[#f5a623] px-8 py-2 rounded-full text-[#1e1b1e] text-lg font-semibold transition-colors duration-300">
+          Télécharger mon CV
+        </a>
+      </div>
+      
+    </div>
+  </section>
+  
+      
+  <section id="a-propos" class="relative py-20 bg-black text-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row gap-8 items-center justify-between space-y-10 md:space-y-0">
+        
+        <!-- Texte à gauche -->
+        <div class="text-center md:text-left md:w-1/2 space-y-6" data-aos="fade-right">
+          <header>
+            <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
+              À propos de <span class="text-yellow-300">Christie Valérie</span>
+            </h2>
+          </header>
+  
+          <p class="text-lg text-justify md:text-xl font-light opacity-80">
+            En tant que danseuse, chaque mouvement est une histoire racontée avec le corps. La danse est une conversation entre l’esprit et l’âme, une émotion pure et libre transmise à travers mes performances.
+          </p>
+          <p class="text-lg text-justify md:text-xl font-light opacity-80">
+            Mes spectacles célèbrent la beauté, la puissance et la grâce du mouvement, inspirés par la vie quotidienne et les traditions artistiques.
+          </p>
+  
+          <div>
+            <a href="#contact" class="border-2 border-[#fcd34d] text-white hover:bg-[#fcd34d] hover:text-[#1e1b1e] px-8 py-2 rounded-full text-lg font-semibold transition-all">
+              Contactez-moi
+            </a>
+          </div>
+        </div>
+  
+        <!-- Image à droite -->
+        <div class="md:w-1/2 relative">
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-40 z-10"></div>
+          <img 
+            src="./assets/images/3.jpg" 
+            alt="Portrait artistique de Christie Valérie en pleine danse" 
+            loading="lazy"
+            class="w-full h-full object-cover rounded-lg shadow-xl" 
+            data-aos="fade-left"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- Section Spectacles et Créations -->
+
+<section id="portfolio" class="relative py-20 bg-black/90 text-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Titre -->
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
+           <span class="text-yellow-300">Spectacles </span> et <span class="text-yellow-300">Créations</span>
+        </h2>
+        <p class="text-lg md:text-xl font-light opacity-80 mt-4">
+          Découvrez les œuvres uniques de Christie Valérie AKAMBA, qui allient émotion, culture et narration à travers la danse.
+        </p>
+      </div>
+  
+      <!-- Grid Portfolio -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        
+        <!-- Spectacle -->
+        <div class="relative group overflow-hidden rounded-lg shadow-xl">
+          <img src="./assets/images/50761.jpg" alt="Mabelé" class="w-full h-64 object-cover">
+          
+          <!-- Bandeau Titre (toujours visible) -->
+          <div class="absolute bottom-0 left-0 right-0 bg-black/60 p-4 z-10">
+            <p class="text-white text-lg font-semibold">Mabelé (2019 - 2024)</p>
+          </div>
+  
+          <!-- Overlay survol -->
+          <div class="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center px-4">
+            <p class="text-white mb-4 text-sm md:text-base font-light">
+              Une exploration poétique de la connexion entre l’homme et la terre, mêlant tradition et modernité.
+            </p>
+            <a href="#contact" class="bg-yellow-300 text-black px-6 py-2 rounded-full font-semibold hover:bg-yellow-400 transition">
+              Lire plus
+            </a>
+          </div>
+        </div>
+  
+        <!-- Autres spectacles (répéter avec variations) -->
+  
+        <div class="relative group overflow-hidden rounded-lg shadow-xl">
+          <img src="./assets/images/1.jpg" alt="Terre Enterré" class="w-full h-64 object-cover">
+          <div class="absolute bottom-0 left-0 right-0 bg-black/60 p-4 z-10">
+            <p class="text-white text-lg font-semibold">Terre Enterré (2024)</p>
+          </div>
+          <div class="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center px-4">
+            <p class="text-white mb-4 text-sm md:text-base font-light">
+              Un hommage aux racines oubliées et à la mémoire collective, entre douleur et renaissance.
+            </p>
+            <a href="#contact" class="bg-yellow-300 text-black px-6 py-2 rounded-full font-semibold hover:bg-yellow-400 transition">
+              Lire plus
+            </a>
+          </div>
+        </div>
+  
+        <div class="relative group overflow-hidden rounded-lg shadow-xl">
+          <img src="./assets/images/2.jpg" alt="Leo" class="w-full h-64 object-cover">
+          <div class="absolute bottom-0 left-0 right-0 bg-black/60 p-4 z-10">
+            <p class="text-white text-lg font-semibold">Leo (2022)</p>
+          </div>
+          <div class="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center px-4">
+            <p class="text-white mb-4 text-sm md:text-base font-light">
+              Un voyage intérieur à travers la puissance et la vulnérabilité de l’identité féminine.
+            </p>
+            <a href="#contact" class="bg-yellow-300 text-black px-6 py-2 rounded-full font-semibold hover:bg-yellow-400 transition">
+              Lire plus
+            </a>
+          </div>
+        </div>
+  
+        <div class="relative group overflow-hidden rounded-lg shadow-xl">
+          <img src="./assets/images/20231128_160538.jpg" alt="Chœur des Lamentations" class="w-full h-64 object-cover">
+          <div class="absolute bottom-0 left-0 right-0 bg-black/60 p-4 z-10">
+            <p class="text-white text-lg font-semibold">Chœur des Lamentations (2023)</p>
+          </div>
+          <div class="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center px-4">
+            <p class="text-white mb-4 text-sm md:text-base font-light">
+              Une chorégraphie en hommage aux voix oubliées, entre douleur collective et espoir.
+            </p>
+            <a href="#contact" class="bg-yellow-300 text-black px-6 py-2 rounded-full font-semibold hover:bg-yellow-400 transition">
+              Lire plus
+            </a>
+          </div>
+        </div>
+  
+      </div>
+  
+      <!-- Bouton général -->
+      <div class="text-center mt-12">
+        <a href="spectacles.html" class="border-2 border-[#fcd34d] text-white hover:bg-[#fcd34d] hover:text-black px-8 py-2 rounded-full text-lg font-semibold transition-all">
+          Voir plus
+        </a>
+      </div>
+  
+    </div>
+  </section>
+  
+<!-- Section Projets Artistiques -->
+<!-- Section Projets Artistiques -->
+<section id="artistic-projects" class="relative py-20 bg-black text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-yellow-300">Projets Artistiques</h2>
+        <p class="text-lg md:text-xl font-light opacity-80 mt-4">
+          Explorez des projets novateurs de Christie Valérie AKAMBA, qui repoussent les limites de l'art visuel et de la performance.
+        </p>
+      </div>
+  
+      <!-- Swiper Container -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Projet 1 -->
+          <div class="swiper-slide relative rounded-lg overflow-hidden text-center">
+            <div class="w-full h-64 bg-cover bg-center" style="background-image: url('./assets/images/1.jpg');"></div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-yellow-300">créant Kwetu Unity</h3>
+              <p class="text-sm text-gray-300 mt-2">
+                Description du projet 1. Cette œuvre explore les limites de l'art moderne et de l'architecture.
+              </p>
+              <div class="text-center mt-12">
+                <a href="#contact" class="text-white hover:text-yellow-300 underline text-lg font-semibold transition-all">
+                  En savoir plus
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Projet 2 -->
+          <div class="swiper-slide relative rounded-lg overflow-hidden text-center">
+            <div class="w-full h-64 bg-cover bg-center" style="background-image: url('./assets/images/2.jpg');"></div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-yellow-300">Spéctacles à Kimia Rési-Danse</h3>
+              <p class="text-sm text-gray-300 mt-2">
+                Description du projet 2. Une fusion de danse et de performance visuelle qui explore le mouvement humain.
+              </p>
+              <div class="text-center mt-12">
+                <a href="#contact" class="text-white hover:text-yellow-300 underline text-lg font-semibold transition-all">
+                  En savoir plus
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Projet 3 -->
+          <div class="swiper-slide relative rounded-lg overflow-hidden text-center">
+            <div class="w-full h-64 bg-cover bg-center" style="background-image: url('./assets/images/50761.jpg');"></div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-yellow-300">Burundi en création</h3>
+              <p class="text-sm text-gray-300 mt-2">
+                Description du projet 3. Une exploration du corps humain à travers des installations artistiques et interactives.
+              </p>
+              <div class="text-center mt-12">
+                <a href="#contact" class="text-white hover:text-yellow-300 underline text-lg font-semibold transition-all">
+                  En savoir plus
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Pagination et Navigation (si nécessaire) -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Lien vers Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  
+  
+
+
+  
+<!-- Section Galerie - Défilement Horizontal Infini -->
+<section id="gallery" class="relative bg-[#1e1e1e] py-16 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Introduction
+    <div class="text-center mb-10">
+      <h2 class="text-3xl md:text-4xl font-bold text-white">
+        Galerie
+      </h2>
+      <p class="text-gray-400 text-sm md:text-base mt-2">
+        Voyage visuel à travers les œuvres, les spectacles et les instants de vie de Christie Valérie AKAMBA.
+      </p>
+    </div> -->
+
+    <!-- Slider infini -->
+    <div class="relative w-full overflow-hidden">
+      <div class="flex animate-scroll gap-6">
+        
+        <!-- Images répétées pour effet infini -->
+        <div class="flex gap-6">
+          <img src="./assets/images/3.jpg" alt="Gallery Image 1" class="h-64 w-auto rounded-lg object-cover">
+          <img src="./assets/images/2.jpg" alt="Gallery Image 2" class="h-64 w-auto rounded-lg object-cover">
+          <img src="./assets/images/3.jpg" alt="Gallery Image 3" class="h-64 w-auto rounded-lg object-cover">
+          <img src="./assets/images/20231128_160559.jpg" alt="Gallery Image 4" class="h-64 w-auto rounded-lg object-cover">
+          <img src="./assets/images/20231128_160538.jpg" alt="Gallery Image 5" class="h-64 w-auto rounded-lg object-cover">
+          <img src="./assets/images/20230921_095501.jpg" alt="Gallery Image 6" class="h-64 w-auto rounded-lg object-cover">
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Animation Tailwind CSS personnalisée pour galerie -->
+<style>
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+  animation: scroll 10s linear infinite;
+}
+</style>
+
+
+
+
+<!-- Section Médias et Interviews -->
+<section id="media" class="bg-black py-20 px-4 text-white">
+  <div class="max-w-7xl mx-auto">
+    
+    <!-- Titre -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight">
+        Médias <span class="text-yellow-400">&</span> Interviews
+      </h2>
+      <p class="text-lg opacity-70 mt-4">
+        Plongez dans les interviews, reportages et couvertures médiatiques de Christie Valérie AKAMBA.
+      </p>
+    </div>
+
+    <!-- Grille -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+      
+      <!-- Colonne gauche (grande image) -->
+      <a href="https://example.com/interview-rfi" target="_blank" class="relative group overflow-hidden rounded-lg shadow-lg block">
+        <img src="./assets/images/1.jpg" alt="Grande interview" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+        <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+          <p class="text-xl font-semibold opacity-0 group-hover:opacity-100 group-hover:-translate-y-2 transition-all duration-500">
+            Interview sur RFI (2024)
+          </p>
+        </div>
+      </a>
+
+      <!-- Colonne droite (deux petites images) -->
+      <div class="flex flex-col gap-8">
+        
+        <a href="https://example.com/article-lemonde" target="_blank" class="relative group overflow-hidden rounded-lg shadow-lg block h-64">
+          <img src="./assets/images/2.jpg" alt="Article presse" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+            <p class="text-lg font-medium opacity-0 group-hover:opacity-100 group-hover:-translate-y-2 transition-all duration-500">
+              Couverture dans Le Monde (2023)
+            </p>
+          </div>
+        </a>
+
+        <a href="https://example.com/entretien-tv5" target="_blank" class="relative group overflow-hidden rounded-lg shadow-lg block h-64">
+          <img src="./assets/images/3.jpg" alt="Entretien TV" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+            <p class="text-lg font-medium opacity-0 group-hover:opacity-100 group-hover:-translate-y-2 transition-all duration-500">
+              Entretien TV5 Monde (2022)
+            </p>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Récompenses & Distinctions Responsive -->
+<section id="awards" class="relative   text-white" style="background-image: url('./assets/images/prix.jpg'); background-size: cover; background-position: center;">
+  <div class=" bg-black/80 py-20 px-4 sm:px-8 md:px-16">
+    <div class="max-w-6xl mx-auto  ">
+      <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16 ">Récompenses <span class="text-yellow-300">&</span> Distinctions</h2>
+  
+      <!-- Ligne centrale -->
+      <div class="relative">
+        <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-yellow-400 to-yellow-700"></div>
+  
+        <!-- Éléments de la timeline -->
+        <div class="space-y-16">
+  
+          <!-- Élément 1 -->
+          <div class="flex flex-col md:flex-row md:items-center">
+            <!-- Gauche -->
+            <div class="md:w-1/2 md:pr-8 text-right">
+              <h3 class="text-xl sm:text-2xl font-semibold">Prix d'Excellence Artistique</h3>
+              <p class="text-gray-400 mt-2 text-sm sm:text-base">Reconnaissance pour contribution exceptionnelle à l'art contemporain.</p>
+            </div>
+  
+            <!-- Milieu (année) -->
+            <div class="relative flex items-center justify-center w-12 h-12 mx-auto md:ml-auto md:mr-0 bg-yellow-500 text-black font-bold text-sm rounded-full transform hover:scale-105 transition-transform shadow-lg z-10">
+              2020
+            </div>
+  
+            <!-- Droite vide -->
+            <div class="md:w-1/2 md:pl-8 hidden md:block"></div>
+          </div>
+  
+          <!-- Élément 2 -->
+          <div class="flex flex-col md:flex-row md:items-center">
+            <!-- Gauche vide -->
+            <div class="md:w-1/2 md:pr-8 hidden md:block"></div>
+  
+            <!-- Milieu (année) -->
+            <div class="relative flex items-center justify-center w-12 h-12 mx-auto md:mx-0 bg-yellow-500 text-black font-bold text-sm rounded-full transform hover:scale-105 transition-transform shadow-lg z-10">
+              2021
+            </div>
+  
+            <!-- Droite -->
+            <div class="md:w-1/2 md:pl-8 text-left mt-6 md:mt-0">
+              <h3 class="text-xl sm:text-2xl font-semibold">Meilleure Performance Internationale</h3>
+              <p class="text-gray-400 mt-2 text-sm sm:text-base">Distinction pour une tournée artistique à l'étranger.</p>
+            </div>
+          </div>
+  
+          <!-- Élément 3 -->
+          <div class="flex flex-col md:flex-row md:items-center">
+            <!-- Gauche -->
+            <div class="md:w-1/2 md:pr-8 text-right">
+              <h3 class="text-xl sm:text-2xl font-semibold">Honneur Culturel National</h3>
+              <p class="text-gray-400 mt-2 text-sm sm:text-base">Hommage reçu pour l'impact sur la culture nationale.</p>
+            </div>
+  
+            <!-- Milieu (année) -->
+            <div class="relative flex items-center justify-center w-12 h-12 mx-auto md:ml-auto md:mr-0 bg-yellow-500 text-black font-bold text-sm rounded-full transform hover:scale-105 transition-transform shadow-lg z-10">
+              2023
+            </div>
+  
+            <!-- Droite vide -->
+            <div class="md:w-1/2 md:pl-8 hidden md:block"></div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+<!-- Contact -->
+<section id="contact" class="bg-black  text-white py-20   sm:px-10 md:px-16">
+  <div class=" grid grid-cols-1 md:grid-cols-2 ">
+
+    <!-- Partie Gauche : Coordonnées -->
+    <div class="">
+      <h2 class="text-3xl sm:text-4xl font-bold text-yellow-400">Me Contacter</h2>
+      <p class="text-gray-300 text-base sm:text-lg">Pour une collaboration artistique, un booking ou tout échange, je suis joignable via :</p>
+
+      <!-- Informations directes -->
+      <div class="space-y-4">
+        <div class="flex items-start gap-4">
+          <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5A2.25 2.25 0 0119.5 19.5H4.5a2.25 2.25 0 01-2.25-2.25V6.75M3 6.75L12 13.5l9-6.75" />
+          </svg>
+          <div>
+            <p class="text-sm uppercase text-gray-400">Email</p>
+            <p class="font-medium text-lg">contact@artistedanse.com</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 4.5l19.5 15-19.5-15zm0 0L21.75 19.5m-19.5 0L12 9l9.75 10.5" />
+          </svg>
+          <div>
+            <p class="text-sm uppercase text-gray-400">Téléphone / WhatsApp</p>
+            <p class="font-medium text-lg">+243 900 000 000</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 11c1.657 0 3-1.343 3-3S13.657 5 12 5 9 6.343 9 8s1.343 3 3 3zm0 2c-2.485 0-7.5 1.243-7.5 3.75V18h15v-1.25c0-2.507-5.015-3.75-7.5-3.75z" />
+          </svg>
+          <div>
+            <p class="text-sm uppercase text-gray-400">Localisation</p>
+            <p class="font-medium text-lg">Kinshasa, RDC</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Partie Droite : Réseaux + Formulaire -->
+    <div class="">
+      <!-- Réseaux sociaux -->
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Suivez mon univers</h3>
+        <div class="flex gap-6 text-yellow-400 text-2xl">
+          <a href="#" target="_blank" aria-label="Instagram" class="hover:scale-110 transition"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2A5.75 5.75 0 002 7.75v8.5A5.75 5.75 0 007.75 22h8.5A5.75 5.75 0 0022 16.25v-8.5A5.75 5.75 0 0016.25 2h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm6.25-.75a1 1 0 110 2 1 1 0 010-2z"/></svg></a>
+          <a href="#" target="_blank" aria-label="Facebook" class="hover:scale-110 transition"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M10.75 9H9V7.25C9 6.56 9.56 6 10.25 6H12V4h-2C8.35 4 7 5.35 7 7v2H5v2h2v6h2v-6h1.75l.25-2z"/></svg></a>
+          <a href="#" target="_blank" aria-label="Twitter" class="hover:scale-110 transition"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20c7.547 0 11.675-6.155 11.675-11.495 0-.175 0-.349-.012-.522A8.18 8.18 0 0022 5.92a8.217 8.217 0 01-2.357.636A4.077 4.077 0 0021.448 4a8.18 8.18 0 01-2.605.978 4.106 4.106 0 00-6.993 3.743A11.65 11.65 0 013.23 4.897a4.073 4.073 0 001.27 5.47A4.075 4.075 0 012.8 9.713v.052a4.103 4.103 0 003.292 4.019 4.066 4.066 0 01-1.085.144 3.94 3.94 0 01-.773-.072 4.1 4.1 0 003.834 2.82A8.233 8.233 0 012 18.407 11.616 11.616 0 008.29 20"/></svg></a>
+        </div>
+      </div>
+
+      <!-- Formulaire de contact -->
+      <form class="space-y-4">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <input type="text" placeholder="Nom" class="bg-[#181818] text-white px-4 py-3 rounded-md border border-gray-700 focus:ring-2 focus:ring-yellow-400 outline-none">
+          <input type="email" placeholder="Email" class="bg-[#181818] text-white px-4 py-3 rounded-md border border-gray-700 focus:ring-2 focus:ring-yellow-400 outline-none">
+        </div>
+        <textarea rows="4" placeholder="Votre message..." class="w-full bg-[#181818] text-white px-4 py-3 rounded-md border border-gray-700 focus:ring-2 focus:ring-yellow-400 outline-none"></textarea>
+        <button type="submit" class="bg-yellow-500  hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-full transition w-full sm:w-auto">Envoyer</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER  -->
+ 
+<footer class="bg-black/90 text-white pt-14 pb-6  sm:px-10 md:px-20">
+  <div class=" grid grid-cols-1 md:grid-cols-3 gap-10 border-b border-gray-800 pb-10">
+
+    <!-- Colonne 1 : Nom ou Logo -->
+    <div>
+      <h3 class="text-2xl font-bold text-yellow-400 bg-gray-700">Christie Valerie</h3>
+      <p class="text-gray-400 mt-3 text-sm">Danse contemporaine · Performances · Art visuel</p>
+      <small>« L'art ne reproduit pas le visible, il rend visible. » </small>
+    </div>
+
+    <!-- Colonne 2 : Liens rapides -->
+    <div>
+      <h4 class="text-lg font-semibold mb-4 bg-gray-800">Navigation</h4>
+      <ul class="space-y-2 text-gray-400 text-sm">
+        <li><a href="#home" class="hover:text-yellow-400 transition">Accueil</a></li>
+        <li><a href="#about" class="hover:text-yellow-400 transition">À propos</a></li>
+        <li><a href="#oeuvres" class="hover:text-yellow-400 transition">Œuvres</a></li>
+        <li><a href="#contact" class="hover:text-yellow-400 transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Colonne 3 : Réseaux sociaux -->
+    <div>
+      <h4 class="text-lg font-semibold mb-4 bg-gray-900">Suivez-moi</h4>
+      <div class="flex space-x-5 text-yellow-400 text-xl">
+        <a href="#" aria-label="Instagram" class="hover:scale-110 transition">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M7.75 2A5.75 5.75 0 002 7.75v8.5A5.75 5.75 0 007.75 22h8.5A5.75 5.75 0 0022 16.25v-8.5A5.75 5.75 0 0016.25 2h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm6.25-.75a1 1 0 110 2 1 1 0 010-2z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="Facebook" class="hover:scale-110 transition">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M10.75 9H9V7.25C9 6.56 9.56 6 10.25 6H12V4h-2C8.35 4 7 5.35 7 7v2H5v2h2v6h2v-6h1.75l.25-2z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="Twitter" class="hover:scale-110 transition">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M8.29 20c7.547 0 11.675-6.155 11.675-11.495 0-.175 0-.349-.012-.522A8.18 8.18 0 0022 5.92a8.217 8.217 0 01-2.357.636A4.077 4.077 0 0021.448 4a8.18 8.18 0 01-2.605.978 4.106 4.106 0 00-6.993 3.743A11.65 11.65 0 013.23 4.897a4.073 4.073 0 001.27 5.47A4.075 4.075 0 012.8 9.713v.052a4.103 4.103 0 003.292 4.019 4.066 4.066 0 01-1.085.144 3.94 3.94 0 01-.773-.072 4.1 4.1 0 003.834 2.82A8.233 8.233 0 012 18.407 11.616 11.616 0 008.29 20"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center text-gray-500 text-sm mt-6">
+    &copy; 2025 Nom de l’artiste. Tous droits réservés.
+  </div>
+</footer>
+
+
+
+
+
+
+
+  
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+  
+
+
+<!-- Script pour le menu mobile -->
+<script>
+    const mobileMenuButton = document.getElementById("mobileMenuButton");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
+
+
+   // Initialiser le Swiper
+   var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,  // Affiche 1 projet par vue
+      spaceBetween: 10,   // Espacement entre les projets
+      pagination: {
+        el: '.swiper-pagination',  // Pagination activée
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',  // Bouton suivant
+        prevEl: '.swiper-button-prev',  // Bouton précédent
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,  // Sur les petits écrans, on affiche 2 projets
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,  // Sur les écrans plus grands, on affiche 3 projets
+          spaceBetween: 30,
+        },
+      },
+    });
+</script>
+
+</body>
+
+
+</html>
