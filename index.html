@@ -72,7 +72,7 @@
     </nav>
   
 <!-- Hero section  -->
-<section id="hero" class="relative bg-cover bg-center h-screen" style="background-image: url('./assets/images/bgImage.jpg');">
+<section id="hero" class="relative bg-cover bg-center h-screen" style="background-image: url('./src/assets/images/bgImage.jpg');">
     <!-- Overlay -->
     <div class="absolute inset-0 bg-black/80"></div>
   
@@ -135,7 +135,7 @@
         <div class="md:w-1/2 relative">
           <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-40 z-10"></div>
           <img 
-            src="./assets/images/3.jpg" 
+            src="./src/assets/images/3.jpg" 
             alt="Portrait artistique de Christie Valérie en pleine danse" 
             loading="lazy"
             class="w-full h-full object-cover rounded-lg shadow-xl" 
@@ -166,7 +166,7 @@
         
         <!-- Spectacle -->
         <div class="relative group overflow-hidden rounded-lg shadow-xl">
-          <img src="./assets/images/50761.jpg" alt="Mabelé" class="w-full h-64 object-cover">
+          <img src="./src/assets/images/50761.jpg" alt="Mabelé" class="w-full h-64 object-cover">
           
           <!-- Bandeau Titre (toujours visible) -->
           <div class="absolute bottom-0 left-0 right-0 bg-black/60 p-4 z-10">
@@ -187,7 +187,7 @@
         <!-- Autres spectacles (répéter avec variations) -->
   
         <div class="relative group overflow-hidden rounded-lg shadow-xl">
-          <img src="./assets/images/1.jpg" alt="Terre Enterré" class="w-full h-64 object-cover">
+          <img src="./src/assets/images/1.jpg" alt="Terre Enterré" class="w-full h-64 object-cover">
           <div class="absolute bottom-0 left-0 right-0 bg-black/60 p-4 z-10">
             <p class="text-white text-lg font-semibold">Terre Enterré (2024)</p>
           </div>
@@ -202,7 +202,7 @@
         </div>
   
         <div class="relative group overflow-hidden rounded-lg shadow-xl">
-          <img src="./assets/images/2.jpg" alt="Leo" class="w-full h-64 object-cover">
+          <img src="./src/assets/images/2.jpg" alt="Leo" class="w-full h-64 object-cover">
           <div class="absolute bottom-0 left-0 right-0 bg-black/60 p-4 z-10">
             <p class="text-white text-lg font-semibold">Leo (2022)</p>
           </div>
@@ -217,7 +217,7 @@
         </div>
   
         <div class="relative group overflow-hidden rounded-lg shadow-xl">
-          <img src="./assets/images/20231128_160538.jpg" alt="Chœur des Lamentations" class="w-full h-64 object-cover">
+          <img src="./src/assets/images/20231128_160538.jpg" alt="Chœur des Lamentations" class="w-full h-64 object-cover">
           <div class="absolute bottom-0 left-0 right-0 bg-black/60 p-4 z-10">
             <p class="text-white text-lg font-semibold">Chœur des Lamentations (2023)</p>
           </div>
@@ -244,7 +244,6 @@
   </section>
   
 <!-- Section Projets Artistiques -->
-<!-- Section Projets Artistiques -->
 <section id="artistic-projects" class="relative py-20 bg-black text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
@@ -258,8 +257,8 @@
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <!-- Projet 1 -->
-          <div class="swiper-slide relative rounded-lg overflow-hidden text-center">
-            <div class="w-full h-64 bg-cover bg-center" style="background-image: url('./assets/images/1.jpg');"></div>
+          <div class="swiper-slide relative rounded-lg overflow-hidden text-center bg-white/10">
+            <div class="w-full h-64 bg-cover bg-center" style="background-image: url('./src/assets/images/1.jpg');"></div>
             <div class="p-6">
               <h3 class="text-xl font-bold text-yellow-300">créant Kwetu Unity</h3>
               <p class="text-sm text-gray-300 mt-2">
@@ -274,8 +273,8 @@
           </div>
   
           <!-- Projet 2 -->
-          <div class="swiper-slide relative rounded-lg overflow-hidden text-center">
-            <div class="w-full h-64 bg-cover bg-center" style="background-image: url('./assets/images/2.jpg');"></div>
+          <div class="swiper-slide relative rounded-lg overflow-hidden text-center bg-white/10">
+            <div class="w-full h-64 bg-cover bg-center" style="background-image: url('./src/assets/images/2.jpg');"></div>
             <div class="p-6">
               <h3 class="text-xl font-bold text-yellow-300">Spéctacles à Kimia Rési-Danse</h3>
               <p class="text-sm text-gray-300 mt-2">
@@ -290,8 +289,8 @@
           </div>
   
           <!-- Projet 3 -->
-          <div class="swiper-slide relative rounded-lg overflow-hidden text-center">
-            <div class="w-full h-64 bg-cover bg-center" style="background-image: url('./assets/images/50761.jpg');"></div>
+          <div class="swiper-slide relative rounded-lg overflow-hidden text-center bg-white/10 ">
+            <div class="w-full h-64 bg-cover bg-center" style="background-image: url('./src/assets/images/50761.jpg');"></div>
             <div class="p-6">
               <h3 class="text-xl font-bold text-yellow-300">Burundi en création</h3>
               <p class="text-sm text-gray-300 mt-2">
@@ -304,6 +303,8 @@
               </div>
             </div>
           </div>
+
+          
         </div>
   
         <!-- Pagination et Navigation (si nécessaire) -->
@@ -314,8 +315,6 @@
     </div>
   </section>
   
-  <!-- Lien vers Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   
   
@@ -342,12 +341,12 @@
         
         <!-- Images répétées pour effet infini -->
         <div class="flex gap-6">
-          <img src="./assets/images/3.jpg" alt="Gallery Image 1" class="h-64 w-auto rounded-lg object-cover">
-          <img src="./assets/images/2.jpg" alt="Gallery Image 2" class="h-64 w-auto rounded-lg object-cover">
-          <img src="./assets/images/3.jpg" alt="Gallery Image 3" class="h-64 w-auto rounded-lg object-cover">
-          <img src="./assets/images/20231128_160559.jpg" alt="Gallery Image 4" class="h-64 w-auto rounded-lg object-cover">
-          <img src="./assets/images/20231128_160538.jpg" alt="Gallery Image 5" class="h-64 w-auto rounded-lg object-cover">
-          <img src="./assets/images/20230921_095501.jpg" alt="Gallery Image 6" class="h-64 w-auto rounded-lg object-cover">
+          <img src="./src/assets/images/3.jpg" alt="Gallery Image 1" class="h-64 w-auto rounded-lg object-cover">
+          <img src="./src/assets/images/2.jpg" alt="Gallery Image 2" class="h-64 w-auto rounded-lg object-cover">
+          <img src="./src/assets/images/3.jpg" alt="Gallery Image 3" class="h-64 w-auto rounded-lg object-cover">
+          <img src="./src/assets/images/20231128_160559.jpg" alt="Gallery Image 4" class="h-64 w-auto rounded-lg object-cover">
+          <img src="./src/assets/images/20231128_160538.jpg" alt="Gallery Image 5" class="h-64 w-auto rounded-lg object-cover">
+          <img src="./src/assets/images/20230921_095501.jpg" alt="Gallery Image 6" class="h-64 w-auto rounded-lg object-cover">
         </div>
 
 
@@ -371,7 +370,6 @@
 
 
 
-
 <!-- Section Médias et Interviews -->
 <section id="media" class="bg-black py-20 px-4 text-white">
   <div class="max-w-7xl mx-auto">
@@ -381,149 +379,195 @@
       <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight">
         Médias <span class="text-yellow-400">&</span> Interviews
       </h2>
-      <p class="text-lg opacity-70 mt-4">
-        Plongez dans les interviews, reportages et couvertures médiatiques de Christie Valérie AKAMBA.
+      <p class="text-lg opacity-70 mt-4 max-w-2xl mx-auto">
+        Plongez dans des interviews et reportages où Christie Valérie AKAMBA partage sa vision, ses engagements et son impact en Afrique et au-delà.
       </p>
     </div>
 
     <!-- Grille -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
       
-      <!-- Colonne gauche (grande image) -->
-      <a href="https://example.com/interview-rfi" target="_blank" class="relative group overflow-hidden rounded-lg shadow-lg block">
-        <img src="./assets/images/1.jpg" alt="Grande interview" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-        <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
-          <p class="text-xl font-semibold opacity-0 group-hover:opacity-100 group-hover:-translate-y-2 transition-all duration-500">
-            Interview sur RFI (2024)
+      <!-- Grande image -->
+      <div class="relative group rounded-lg overflow-hidden shadow-lg">
+        <img src="./src/assets/images/1.jpg" alt="Interview RFI" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/60 p-6 flex flex-col justify-end">
+          <p class="text-yellow-400 text-sm mb-2">🎙️ RFI, 2024</p>
+          <h3 class="text-2xl font-bold">“Réveiller le potentiel d’un continent endormi”</h3>
+          <p class="text-sm mt-1 mb-4 opacity-90">
+            Une interview puissante sur l’indépendance technologique de l’Afrique et la jeunesse qui ose.
           </p>
+          <a href="https://example.com/interview-rfi" target="_blank"
+             class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm bg-yellow-400 text-black font-semibold py-2 px-4 rounded w-max">
+            En savoir plus →
+          </a>
         </div>
-      </a>
+      </div>
 
-      <!-- Colonne droite (deux petites images) -->
+      <!-- Deux images plus petites -->
       <div class="flex flex-col gap-8">
         
-        <a href="https://example.com/article-lemonde" target="_blank" class="relative group overflow-hidden rounded-lg shadow-lg block h-64">
-          <img src="./assets/images/2.jpg" alt="Article presse" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-          <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
-            <p class="text-lg font-medium opacity-0 group-hover:opacity-100 group-hover:-translate-y-2 transition-all duration-500">
-              Couverture dans Le Monde (2023)
+        <div class="relative group rounded-lg overflow-hidden shadow-lg h-64">
+          <img src="./src/assets/images/2.jpg" alt="Article Le Monde" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black/60 p-4 flex flex-col justify-end">
+            <p class="text-yellow-400 text-sm mb-1">📰 Le Monde, 2023</p>
+            <h3 class="text-lg font-semibold">Portrait d’une femme debout</h3>
+            <p class="text-xs mt-1 mb-3 opacity-90">
+              Une plongée dans le parcours d’une voix qui fait bouger les lignes.
             </p>
+            <a href="https://example.com/article-lemonde" target="_blank"
+               class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xs bg-yellow-400 text-black font-semibold py-2 px-3 rounded w-max">
+              Lire l'article →
+            </a>
           </div>
-        </a>
+        </div>
 
-        <a href="https://example.com/entretien-tv5" target="_blank" class="relative group overflow-hidden rounded-lg shadow-lg block h-64">
-          <img src="./assets/images/3.jpg" alt="Entretien TV" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-          <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
-            <p class="text-lg font-medium opacity-0 group-hover:opacity-100 group-hover:-translate-y-2 transition-all duration-500">
-              Entretien TV5 Monde (2022)
+        <div class="relative group rounded-lg overflow-hidden shadow-lg h-64">
+          <img src="./src/assets/images/3.jpg" alt="Entretien TV5" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black/60 p-4 flex flex-col justify-end">
+            <p class="text-yellow-400 text-sm mb-1">🎥 TV5 Monde, 2022</p>
+            <h3 class="text-lg font-semibold">“Ce que je dis aux jeunes femmes : osez.”</h3>
+            <p class="text-xs mt-1 mb-3 opacity-90">
+              Une invitation vibrante à dépasser les barrières visibles et invisibles.
             </p>
+            <a href="https://example.com/entretien-tv5" target="_blank"
+               class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-xs bg-yellow-400 text-black font-semibold py-2 px-3 rounded w-max">
+              Voir l’entretien →
+            </a>
           </div>
-        </a>
+        </div>
 
       </div>
-
     </div>
 
   </div>
 </section>
 
 
-<!-- Récompenses & Distinctions Responsive -->
-<section id="awards" class="relative   text-white" style="background-image: url('./assets/images/prix.jpg'); background-size: cover; background-position: center;">
-  <div class=" bg-black/80 py-20 px-4 sm:px-8 md:px-16">
-    <div class="max-w-6xl mx-auto  ">
-      <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16 ">Récompenses <span class="text-yellow-300">&</span> Distinctions</h2>
-  
-      <!-- Ligne centrale -->
-      <div class="relative">
-        <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-yellow-400 to-yellow-700"></div>
-  
-        <!-- Éléments de la timeline -->
-        <div class="space-y-16">
-  
-          <!-- Élément 1 -->
-          <div class="flex flex-col md:flex-row md:items-center">
-            <!-- Gauche -->
-            <div class="md:w-1/2 md:pr-8 text-right">
-              <h3 class="text-xl sm:text-2xl font-semibold">Prix d'Excellence Artistique</h3>
-              <p class="text-gray-400 mt-2 text-sm sm:text-base">Reconnaissance pour contribution exceptionnelle à l'art contemporain.</p>
-            </div>
-  
-            <!-- Milieu (année) -->
-            <div class="relative flex items-center justify-center w-12 h-12 mx-auto md:ml-auto md:mr-0 bg-yellow-500 text-black font-bold text-sm rounded-full transform hover:scale-105 transition-transform shadow-lg z-10">
-              2020
-            </div>
-  
-            <!-- Droite vide -->
-            <div class="md:w-1/2 md:pl-8 hidden md:block"></div>
+<!-- Récompenses & Distinctions -->
+<section id="awards" class="relative text-white" style="background-image: url('./src/assets/images/prix.jpg'); background-size: cover; background-position: center;">
+  <div class="bg-black/80 py-20 px-4 sm:px-8 md:px-16">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16">
+        Récompenses <span class="text-yellow-300">&</span> Distinctions
+      </h2>
+
+      <!-- === Mobile & Tablette === -->
+      <div class="md:hidden space-y-12">
+        <!-- Item -->
+        <div class="bg-white/10 rounded-xl p-6 shadow-lg">
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-lg font-semibold text-yellow-300">Prix d'Excellence Artistique</h3>
+            <span class="text-sm font-bold bg-yellow-500 text-black rounded-full px-3 py-1">2020</span>
           </div>
-  
-          <!-- Élément 2 -->
-          <div class="flex flex-col md:flex-row md:items-center">
-            <!-- Gauche vide -->
-            <div class="md:w-1/2 md:pr-8 hidden md:block"></div>
-  
-            <!-- Milieu (année) -->
-            <div class="relative flex items-center justify-center w-12 h-12 mx-auto md:mx-0 bg-yellow-500 text-black font-bold text-sm rounded-full transform hover:scale-105 transition-transform shadow-lg z-10">
-              2021
-            </div>
-  
-            <!-- Droite -->
-            <div class="md:w-1/2 md:pl-8 text-left mt-6 md:mt-0">
-              <h3 class="text-xl sm:text-2xl font-semibold">Meilleure Performance Internationale</h3>
-              <p class="text-gray-400 mt-2 text-sm sm:text-base">Distinction pour une tournée artistique à l'étranger.</p>
-            </div>
+          <p class="text-gray-300 text-sm">
+            Reconnaissance pour contribution exceptionnelle à l'art contemporain.
+          </p>
+        </div>
+
+        <!-- Item -->
+        <div class="bg-white/10 rounded-xl p-6 shadow-lg">
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-lg font-semibold text-yellow-300">Meilleure Performance Internationale</h3>
+            <span class="text-sm font-bold bg-yellow-500 text-black rounded-full px-3 py-1">2021</span>
           </div>
-  
-          <!-- Élément 3 -->
-          <div class="flex flex-col md:flex-row md:items-center">
-            <!-- Gauche -->
-            <div class="md:w-1/2 md:pr-8 text-right">
-              <h3 class="text-xl sm:text-2xl font-semibold">Honneur Culturel National</h3>
-              <p class="text-gray-400 mt-2 text-sm sm:text-base">Hommage reçu pour l'impact sur la culture nationale.</p>
-            </div>
-  
-            <!-- Milieu (année) -->
-            <div class="relative flex items-center justify-center w-12 h-12 mx-auto md:ml-auto md:mr-0 bg-yellow-500 text-black font-bold text-sm rounded-full transform hover:scale-105 transition-transform shadow-lg z-10">
-              2023
-            </div>
-  
-            <!-- Droite vide -->
-            <div class="md:w-1/2 md:pl-8 hidden md:block"></div>
+          <p class="text-gray-300 text-sm">
+            Distinction pour une tournée artistique à l'étranger.
+          </p>
+        </div>
+
+        <!-- Item -->
+        <div class="bg-white/10 rounded-xl p-6 shadow-lg">
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="text-lg font-semibold text-yellow-300">Honneur Culturel National</h3>
+            <span class="text-sm font-bold bg-yellow-500 text-black rounded-full px-3 py-1">2023</span>
           </div>
-  
+          <p class="text-gray-300 text-sm">
+            Hommage reçu pour l'impact sur la culture nationale.
+          </p>
         </div>
       </div>
+
+      <!-- === Desktop === -->
+      <div class="hidden md:block relative">
+        <!-- Ligne centrale -->
+        <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-yellow-400 to-yellow-700 z-0"></div>
+
+        <div class="space-y-16 relative z-10">
+          <!-- Élément 1 -->
+          <div class="flex items-center">
+            <div class="w-1/2 pr-8 text-right">
+              <h3 class="text-xl font-semibold">Prix d'Excellence Artistique</h3>
+              <p class="text-gray-400 mt-2 text-sm">Reconnaissance pour contribution exceptionnelle à l'art contemporain.</p>
+            </div>
+            <div class="w-0 flex justify-center">
+              <div class="w-12 h-12 bg-yellow-500 text-black font-bold text-sm rounded-full flex items-center justify-center shadow-lg">
+                2020
+              </div>
+            </div>
+            <div class="w-1/2 pl-8"></div>
+          </div>
+
+          <!-- Élément 2 -->
+          <div class="flex items-center">
+            <div class="w-1/2 pr-8"></div>
+            <div class="w-0 flex justify-center">
+              <div class="w-12 h-12 bg-yellow-500 text-black font-bold text-sm rounded-full flex items-center justify-center shadow-lg">
+                2021
+              </div>
+            </div>
+            <div class="w-1/2 pl-8 text-left">
+              <h3 class="text-xl font-semibold">Meilleure Performance Internationale</h3>
+              <p class="text-gray-400 mt-2 text-sm">Distinction pour une tournée artistique à l'étranger.</p>
+            </div>
+          </div>
+
+          <!-- Élément 3 -->
+          <div class="flex items-center">
+            <div class="w-1/2 pr-8 text-right">
+              <h3 class="text-xl font-semibold">Honneur Culturel National</h3>
+              <p class="text-gray-400 mt-2 text-sm">Hommage reçu pour l'impact sur la culture nationale.</p>
+            </div>
+            <div class="w-0 flex justify-center">
+              <div class="w-12 h-12 bg-yellow-500 text-black font-bold text-sm rounded-full flex items-center justify-center shadow-lg">
+                2023
+              </div>
+            </div>
+            <div class="w-1/2 pl-8"></div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
-  
 </section>
+
+
 
 
 <!-- Contact -->
-<section id="contact" class="bg-black  text-white py-20   sm:px-10 md:px-16">
-  <div class=" grid grid-cols-1 md:grid-cols-2 ">
+<section id="contact" class="bg-black text-white py-20 px-6 sm:px-10  md:px-16">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-7xl mx-auto">
+    <!-- Coordonnées -->
+    <div class="bg-white/10 p-8 rounded-lg">
+      <h2 class="text-3xl sm:text-4xl font-bold text-yellow-400 mb-4"> <span class="text-white">Me</span> Contacter</h2>
+      <p class="text-gray-300 text-base sm:text-lg mb-8">Pour une collaboration artistique, un booking ou tout échange, je suis joignable via :</p>
 
-    <!-- Partie Gauche : Coordonnées -->
-    <div class="">
-      <h2 class="text-3xl sm:text-4xl font-bold text-yellow-400">Me Contacter</h2>
-      <p class="text-gray-300 text-base sm:text-lg">Pour une collaboration artistique, un booking ou tout échange, je suis joignable via :</p>
-
-      <!-- Informations directes -->
-      <div class="space-y-4">
+      <div class="space-y-6">
+        <!-- Email -->
         <div class="flex items-start gap-4">
-          <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5A2.25 2.25 0 0119.5 19.5H4.5a2.25 2.25 0 01-2.25-2.25V6.75M3 6.75L12 13.5l9-6.75" />
+          <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21.75 6.75v10.5A2.25..."/>
           </svg>
           <div>
             <p class="text-sm uppercase text-gray-400">Email</p>
-            <p class="font-medium text-lg">contact@artistedanse.com</p>
+            <p class="font-medium text-lg break-all">contact@artistedanse.com</p>
           </div>
         </div>
 
+        <!-- Téléphone -->
         <div class="flex items-start gap-4">
-          <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 4.5l19.5 15-19.5-15zm0 0L21.75 19.5m-19.5 0L12 9l9.75 10.5" />
+          <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="..." />
           </svg>
           <div>
             <p class="text-sm uppercase text-gray-400">Téléphone / WhatsApp</p>
@@ -531,9 +575,10 @@
           </div>
         </div>
 
+        <!-- Localisation -->
         <div class="flex items-start gap-4">
-          <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 11c1.657 0 3-1.343 3-3S13.657 5 12 5 9 6.343 9 8s1.343 3 3 3zm0 2c-2.485 0-7.5 1.243-7.5 3.75V18h15v-1.25c0-2.507-5.015-3.75-7.5-3.75z" />
+          <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="..." />
           </svg>
           <div>
             <p class="text-sm uppercase text-gray-400">Localisation</p>
@@ -543,47 +588,52 @@
       </div>
     </div>
 
-    <!-- Partie Droite : Réseaux + Formulaire -->
-    <div class="">
-      <!-- Réseaux sociaux -->
+    <!-- Formulaire -->
+    <div class="flex flex-col gap-8">
       <div>
-        <h3 class="text-xl font-semibold mb-4">Suivez mon univers</h3>
+        <h3 class="text-xl font-semibold mb-4 uppercase">Laissez nous un message </h3>
         <div class="flex gap-6 text-yellow-400 text-2xl">
-          <a href="#" target="_blank" aria-label="Instagram" class="hover:scale-110 transition"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2A5.75 5.75 0 002 7.75v8.5A5.75 5.75 0 007.75 22h8.5A5.75 5.75 0 0022 16.25v-8.5A5.75 5.75 0 0016.25 2h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm6.25-.75a1 1 0 110 2 1 1 0 010-2z"/></svg></a>
-          <a href="#" target="_blank" aria-label="Facebook" class="hover:scale-110 transition"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M10.75 9H9V7.25C9 6.56 9.56 6 10.25 6H12V4h-2C8.35 4 7 5.35 7 7v2H5v2h2v6h2v-6h1.75l.25-2z"/></svg></a>
-          <a href="#" target="_blank" aria-label="Twitter" class="hover:scale-110 transition"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20c7.547 0 11.675-6.155 11.675-11.495 0-.175 0-.349-.012-.522A8.18 8.18 0 0022 5.92a8.217 8.217 0 01-2.357.636A4.077 4.077 0 0021.448 4a8.18 8.18 0 01-2.605.978 4.106 4.106 0 00-6.993 3.743A11.65 11.65 0 013.23 4.897a4.073 4.073 0 001.27 5.47A4.075 4.075 0 012.8 9.713v.052a4.103 4.103 0 003.292 4.019 4.066 4.066 0 01-1.085.144 3.94 3.94 0 01-.773-.072 4.1 4.1 0 003.834 2.82A8.233 8.233 0 012 18.407 11.616 11.616 0 008.29 20"/></svg></a>
+          <!-- Icônes réseaux sociaux -->
+          <a href="#" aria-label="Instagram" class="hover:scale-110 transition"><!-- SVG --></a>
+          <a href="#" aria-label="Facebook" class="hover:scale-110 transition"><!-- SVG --></a>
+          <a href="#" aria-label="Twitter" class="hover:scale-110 transition"><!-- SVG --></a>
         </div>
       </div>
 
-      <!-- Formulaire de contact -->
-      <form class="space-y-4">
+      <form role="form" class="space-y-4">
         <div class="grid sm:grid-cols-2 gap-4">
-          <input type="text" placeholder="Nom" class="bg-[#181818] text-white px-4 py-3 rounded-md border border-gray-700 focus:ring-2 focus:ring-yellow-400 outline-none">
-          <input type="email" placeholder="Email" class="bg-[#181818] text-white px-4 py-3 rounded-md border border-gray-700 focus:ring-2 focus:ring-yellow-400 outline-none">
+          <label class="sr-only" for="name">Nom</label>
+          <input id="name" type="text" placeholder="Nom" class="bg-[#181818] text-white px-4 py-3 rounded-md border border-gray-700 focus:ring-2 focus:ring-yellow-400 outline-none w-full">
+          
+          <label class="sr-only" for="email">Email</label>
+          <input id="email" type="email" placeholder="Email" class="bg-[#181818] text-white px-4 py-3 rounded-md border border-gray-700 focus:ring-2 focus:ring-yellow-400 outline-none w-full">
         </div>
-        <textarea rows="4" placeholder="Votre message..." class="w-full bg-[#181818] text-white px-4 py-3 rounded-md border border-gray-700 focus:ring-2 focus:ring-yellow-400 outline-none"></textarea>
-        <button type="submit" class="bg-yellow-500  hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-full transition w-full sm:w-auto">Envoyer</button>
+        
+        <label class="sr-only" for="message">Message</label>
+        <textarea id="message" rows="4" placeholder="Votre message..." class="w-full bg-[#181818] text-white px-4 py-3 rounded-md border border-gray-700 focus:ring-2 focus:ring-yellow-400 outline-none"></textarea>
+        
+        <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-3 rounded-full transition w-full sm:w-auto">Envoyer</button>
       </form>
     </div>
   </div>
 </section>
 
 
-<!-- FOOTER  -->
- 
-<footer class="bg-black/90 text-white pt-14 pb-6  sm:px-10 md:px-20">
-  <div class=" grid grid-cols-1 md:grid-cols-3 gap-10 border-b border-gray-800 pb-10">
 
-    <!-- Colonne 1 : Nom ou Logo -->
-    <div>
-      <h3 class="text-2xl font-bold text-yellow-400 bg-gray-700">Christie Valerie</h3>
+<!-- FOOTER  -->
+<footer class="bg-black text-white pt-14 pb-6 px-6 sm:px-10 md:px-20">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-10 border-b border-gray-800 pb-10">
+    
+    <!-- Colonne 1 -->
+    <div class="text-center md:text-left">
+      <h3 class="text-2xl font-bold text-yellow-400">Christie Valerie</h3>
       <p class="text-gray-400 mt-3 text-sm">Danse contemporaine · Performances · Art visuel</p>
-      <small>« L'art ne reproduit pas le visible, il rend visible. » </small>
+      <small class="text-gray-500 italic block mt-2">« L'art ne reproduit pas le visible, il rend visible. »</small>
     </div>
 
-    <!-- Colonne 2 : Liens rapides -->
-    <div>
-      <h4 class="text-lg font-semibold mb-4 bg-gray-800">Navigation</h4>
+    <!-- Colonne 2 -->
+    <div class="text-center md:text-left">
+      <h4 class="text-lg font-semibold mb-4">Navigation</h4>
       <ul class="space-y-2 text-gray-400 text-sm">
         <li><a href="#home" class="hover:text-yellow-400 transition">Accueil</a></li>
         <li><a href="#about" class="hover:text-yellow-400 transition">À propos</a></li>
@@ -592,35 +642,33 @@
       </ul>
     </div>
 
-    <!-- Colonne 3 : Réseaux sociaux -->
-    <div>
-      <h4 class="text-lg font-semibold mb-4 bg-gray-900">Suivez-moi</h4>
-      <div class="flex space-x-5 text-yellow-400 text-xl">
+    <!-- Colonne 3 -->
+    <div class="text-center md:text-left">
+      <h4 class="text-lg font-semibold mb-4">Suivez-moi</h4>
+      <div class="flex justify-center md:justify-start space-x-5 text-yellow-400 text-xl">
         <a href="#" aria-label="Instagram" class="hover:scale-110 transition">
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M7.75 2A5.75 5.75 0 002 7.75v8.5A5.75 5.75 0 007.75 22h8.5A5.75 5.75 0 0022 16.25v-8.5A5.75 5.75 0 0016.25 2h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm6.25-.75a1 1 0 110 2 1 1 0 010-2z"/>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+            <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-.75a.75.75 0 100 1.5.75.75 0 000-1.5z"/>
           </svg>
         </a>
         <a href="#" aria-label="Facebook" class="hover:scale-110 transition">
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M10.75 9H9V7.25C9 6.56 9.56 6 10.25 6H12V4h-2C8.35 4 7 5.35 7 7v2H5v2h2v6h2v-6h1.75l.25-2z"/>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+            <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 5.014 3.676 9.157 8.438 9.879v-6.987h-2.54v-2.892h2.54V9.797c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.261c-1.243 0-1.63.771-1.63 1.562v1.875h2.773l-.443 2.892h-2.33V22C18.324 21.157 22 17.014 22 12z"/>
           </svg>
         </a>
         <a href="#" aria-label="Twitter" class="hover:scale-110 transition">
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M8.29 20c7.547 0 11.675-6.155 11.675-11.495 0-.175 0-.349-.012-.522A8.18 8.18 0 0022 5.92a8.217 8.217 0 01-2.357.636A4.077 4.077 0 0021.448 4a8.18 8.18 0 01-2.605.978 4.106 4.106 0 00-6.993 3.743A11.65 11.65 0 013.23 4.897a4.073 4.073 0 001.27 5.47A4.075 4.075 0 012.8 9.713v.052a4.103 4.103 0 003.292 4.019 4.066 4.066 0 01-1.085.144 3.94 3.94 0 01-.773-.072 4.1 4.1 0 003.834 2.82A8.233 8.233 0 012 18.407 11.616 11.616 0 008.29 20"/>
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+            <path d="M22.46 6.003c-.77.343-1.598.574-2.465.678a4.301 4.301 0 001.888-2.373 8.54 8.54 0 01-2.721 1.04 4.28 4.28 0 00-7.29 3.9A12.13 12.13 0 013.15 4.83a4.28 4.28 0 001.324 5.713 4.263 4.263 0 01-1.94-.537v.054a4.28 4.28 0 003.433 4.193 4.273 4.273 0 01-1.934.073 4.282 4.282 0 004.002 2.974A8.588 8.588 0 012 19.542 12.104 12.104 0 008.29 21.5c7.548 0 11.675-6.253 11.675-11.675 0-.178-.004-.355-.012-.531A8.337 8.337 0 0022.46 6.003z"/>
           </svg>
         </a>
       </div>
+      
     </div>
   </div>
 
-  <!-- Copyright -->
-  <div class="text-center text-gray-500 text-sm mt-6">
-    &copy; 2025 Nom de l’artiste. Tous droits réservés.
-  </div>
+  <!-- Bas de page -->
+  <div class="text-center text-gray-500 text-sm mt-6">&copy; 2025 Christie Valerie. Tous droits réservés.</div>
 </footer>
-
 
 
 
